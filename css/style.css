@@ -2,11 +2,31 @@
     background-color:rgb(151, 64, 64);
 }
 
-.col{
+.col, .col-md{
     background-color: tan;
     text-align: center;
     border: 1px dotted red;
 }
 
-.row{
+.heading{
+    background-color: aquamarine;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+}
+.nav{
+    background-color: aqua;
+    padding: 5px;
+    font-size: large;
+}
+.article{
+    background-color: chartreuse;
+    padding: 10px;
+
+}
+.side{
+    background-color: cadetblue;
+}
+.footer{
+    background-color: coral;
 }
