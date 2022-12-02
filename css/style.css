@@ -1,0 +1,12 @@
+.btn-primary{
+    background-color:rgb(151, 64, 64);
+}
+
+.col{
+    background-color: tan;
+    text-align: center;
+    border: 1px dotted red;
+}
+
+.row{
+}
