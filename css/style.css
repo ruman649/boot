@@ -42,6 +42,7 @@
 
 .row{
     border:2px solid red;
+    margin: 0;
 }
 
 .blue{
@@ -64,3 +65,7 @@
     background-color: chartreuse;
 }
 
+.col-6{
+    padding: 0;
+    border: 1px dashed purple;
+}
