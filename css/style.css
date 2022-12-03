@@ -75,3 +75,21 @@
 .h-500{
     height: 500px;
 }
+.red{
+    background-color: red;
+    border: 1px solid blueviolet;
+    height: 300px;
+}
+
+li{
+    list-style: none;
+    padding: 4px;
+}
+ul{
+    background-color: brown;
+    
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
