@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+i{
+    color: red;
+    
+}
+i:hover{
+    color: blue;
+}
+i:active{
+    color: aqua;
+}
