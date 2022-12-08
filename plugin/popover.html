@@ -28,39 +28,61 @@
 
 <body>
 
-    <button id="show" class="btn btn-info">show</button>
-    <button id="hide" class="btn btn-danger">hide</button>
+    <!-- <button id="show" class="btn btn-info">show</button>
+    <button id="hide" class="btn btn-danger">hide</button> -->
 
-    <button id="expl" type="button"  data-bs-custom-class="custom-popover" data-bs-toggle="popover" class="btn btn-secondary" >
+    <button id="expl" type="button" data-bs-custom-class="custom-popover" class="btn btn-secondary">
         Popover on bottom
     </button>
-     <button id="expl" type="button"  data-bs-custom-class="custom-popover" class="btn btn-secondary">
+
+
+    <!-- <button id="expl" type="button"  data-bs-custom-class="custom-popover" data-bs-toggle="popover" class="btn btn-secondary"  data-bs-content="And here's some amazing content. It's very engaging. Right?">
+        Popover on bottom
+    </button>
+     <button id="expl" type="button"  data-bs-custom-class="custom-popover" data-bs-toggle="popover" class="btn btn-secondary"  data-bs-content="And here's some amazing content. It's very engaging. Right?">
+        Popover on bottom
+    </button> -->
+
+    <!-- <button id="expl" type="button"  data-bs-custom-class="custom-popover" class="btn btn-secondary">
         Popover on bottom
     </button> 
     <button id="expl" type="button"  data-bs-custom-class="custom-popover" class="btn btn-secondary">
         Popover on bottom
-    </button>
+    </button> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/jquery.js"></script>
 
     <script>
 
-        // this is main code for popover 
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
-        });
+        // // this is main code for popover 
+        // var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        // var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        //     return new bootstrap.Popover(popoverTriggerEl)
+        // });
 
-        // const popover = new bootstrap.Popover('#expl', {
-        //     container: 'body',
-        //     html: true,
-        //     title: "This is popover",
-        //     content: "<h1>This is a new content<h1>",
-        //     placement: "bottom",
-        //     // delay: {"show":1000, "hide":1000},
-        //     // trigger: 'focus', //akbar click korle 2nd bar aar oi baton kaj korbe na. onnu jaigai click kora lagbe
-
-
+        const popover = new bootstrap.Popover('#expl', {
+            container: 'body',
+            html: true,
+            title: "This is popover",
+            content: "<h1>This is a new content<h1>",
+            placement: "bottom",
+            // delay: {"show":1000, "hide":1000},
+            // trigger: 'focus', //akbar click korle 2nd bar aar oi baton kaj korbe na. onnu jaigai click kora lagbe
+        })
+        // $(function () {
+        //     $('#show').click(function () {
+        //         // $('#expl').Popover('show');
+        //         const popover = new bootstrap.Popover('#expl', {
+        //             container: 'body',
+        //             html: true,
+        //             title: "This is popover",
+        //             content: "<h1>This is a new content<h1>",
+        //             placement: "bottom",
+        //             // delay: {"show":1000, "hide":1000},
+        //             // trigger: 'focus', //akbar click korle 2nd bar aar oi baton kaj korbe na. onnu jaigai click kora lagbe
+        //         })
+        //     })
         // })
     </script>
 </body>
